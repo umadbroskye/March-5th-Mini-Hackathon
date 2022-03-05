@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hackathon.ChatView">
+    <children>
+        <VBox />
+        <TextField fx:id="writeMessageBox" alignment="CENTER" layoutY="300.0" maxWidth="1.7976931348623157E308" onAction="#writeMessageBoxClicked" prefHeight="90.0" prefWidth="431.0" promptText="Write Message Here" style="-fx-background-color: white;">
+            <font>
+                <Font size="14.0" />
+            </font></TextField>
+        <TextField alignment="TOP_LEFT" layoutX="29.0" layoutY="74.0" prefHeight="202.0" prefWidth="365.0" style="-fx-background-color: #abbff2;" />
+        <Button layoutX="450.0" layoutY="300.0" mnemonicParsing="false" text="Send" textFill="#07791e">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></Button>
+        <Button fx:id="resetTextButton" layoutX="450.0" layoutY="340.0" mnemonicParsing="false" onAction="#resetTheText" text="Reset Text" textFill="RED">
+            <font>
+                <Font size="14.0" />
+            </font></Button>
+        <Label fx:id="serverLabel" alignment="CENTER" layoutX="245.0" layoutY="7.0" prefHeight="35.0" prefWidth="111.0" text="Server" textFill="#004dff">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Label>
+        <Label fx:id="userLabel" layoutX="482.0" layoutY="59.0" text="User List">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextArea layoutX="431.0" layoutY="81.0" prefHeight="174.0" prefWidth="147.0" style="-fx-background-color: gray;" />
+        <Label layoutX="29.0" layoutY="51.0" text="Messages">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
