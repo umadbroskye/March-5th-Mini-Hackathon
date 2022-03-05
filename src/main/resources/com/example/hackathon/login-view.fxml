@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.collections.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<?import javafx.collections.FXCollections?>
-<?import java.lang.String?>
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hackathon.LoginController">
+<VBox alignment="CENTER" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hackathon.LoginController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-
-    <Label fx:id="logintext" />
+   <Label layoutX="99.0" layoutY="30.0" text="Amazing Java Chat" />
+   <Label text="Enter your username" />
     <TextField fx:id="displayName" promptText="Display Name" />
+   <Label layoutX="44.0" layoutY="75.0" text="Select your desired server" />
     <ChoiceBox fx:id="serverInfo" prefWidth="150.0">
         <items>
             <FXCollections fx:factory="observableArrayList">

@@ -35,10 +35,10 @@ public class LoginController {
             serverIP = "108.59.85.131";
             serverPort = 4000;
         }
-        
+
         FXMLLoader fxmlLoader = new FXMLLoader(ChatApplication.class.getResource("chat-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
-        Stage stage = (Stage) logintext.getScene().getWindow();
+        Stage stage = (Stage) displayName.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
 
