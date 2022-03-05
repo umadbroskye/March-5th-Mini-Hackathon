@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hackathon.ChatView">
+   <children>
+      <VBox />
+      <TextField fx:id="writeMessageBox" alignment="CENTER" layoutY="300.0" maxWidth="1.7976931348623157E308" onAction="#writeMessageBoxClicked" prefHeight="50.0" prefWidth="300.0" promptText="Write Message Here" />
+      <TextField promptText="Chat Sytem" />
+      <Button layoutX="450.0" layoutY="300.0" mnemonicParsing="false" text="Send" />
+      <Button fx:id="resetTextButton" layoutX="450.0" layoutY="340.0" mnemonicParsing="false" onAction="#resetTheText" text="Reset Text" />
+   </children>
+</AnchorPane>
